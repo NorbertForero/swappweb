@@ -1,0 +1,60 @@
+.superior {
+    font-family: Arial;
+    font-size: 11px;
+    color: #fff;
+    padding-bottom: 12px;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+}
+
+.activey {
+    background-color: #33B4E4;
+}
+
+.uly {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.liy {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    float: left !important;
+}
+
+.liay {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+.y:hover {
+    background-color: #33B4E4;
+    cursor: pointer;
+}
+
+.home {
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+    display: inline-block;
+    padding: 0 1.5em;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: solid 1px #E0E0E0;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.titulohome {
+    text-decoration-color: #33B4E4;
+    color: #33B4E4;
+    background: #ffffff;
+}
