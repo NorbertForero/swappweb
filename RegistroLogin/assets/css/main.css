@@ -134,7 +134,7 @@ body, input, select, textarea {
     font: arial;
     line-height: 2;
     letter-spacing: 0.2em;
-    text-transform: capitalize  ;
+    
 }
 
 @media screen and (max-width: 1680px) {
