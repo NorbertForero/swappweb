@@ -16,7 +16,7 @@
 
         if ($stmt->execute()){
 			$message = 'Successfully created new user!!';
-			header('Location: /swappweb/index.php');
+			header('Location: /swappweb/RegistroLogin/login.php');
         } else {
             $message = 'Sorry, an error has ocurred!!';
         }
@@ -48,16 +48,16 @@
 						<form method="post" action="Register.php">
 							<div class="fields">
 								<div class="field">
-									<input type="text" name="nombres" id="name" placeholder="Nombres" />
+									<input type="text" name="nombres" id="name" placeholder="Nombres" required />
 								</div>
 								<div class="field">
-									<input type="text" name="apellidos" id="last_name" placeholder="Apellidos" />
+									<input type="text" name="apellidos" id="last_name" placeholder="Apellidos" required />
 								</div>
 								<div class="field">
-									<input type="text" name="email" id="email" placeholder="Correo" />
+									<input type="text" name="email" id="email" placeholder="Correo" required/>
 								</div>
 								<div class="field">
-									<input type="password" name="password" id="password" placeholder="Contraseña" />
+									<input type="password" name="password" id="password" placeholder="Contraseña" required/>
 								</div>
 							</div>
 							<div>

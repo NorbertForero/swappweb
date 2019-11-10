@@ -5,7 +5,10 @@
     session_unset();
 
     session_destroy();
-
-    header('Location: /SW');
-
+echo'<script type="text/javascript">
+                alert("Se cerro de forma exitosa");
+                window.location.href="index.php";
+                </script>';
+    header('Location: /swappweb');
+    
 ?>

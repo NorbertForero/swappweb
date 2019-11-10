@@ -1,14 +1,15 @@
 <?php
     
     session_start();
-
+	
     if (isset($_SESSION['user_id'])){
-		header('Location: http://localhost/SW/home/index.php');
+		header('Location: http://localhost/swappweb/home/index.php');
     }
-    
-    require 'DB.php';
+	
+	require 'DB.php';
 
-    if (!empty($_POST['email']) && !empty($_POST['password'])){
+	if (!empty($_POST['email']) && !empty($_POST['password']))
+	{
         $records = $conn->prepare('SELECT id_usuario, email, password FROM users WHERE email=:email');
         $records->bindParam(':email', $_POST['email']);
         $records->execute();
@@ -16,14 +17,17 @@
 
         $message = '';
 
-        if (count($results) > 0 && password_verify($_POST['password'], $results['password'])){
+		if (count($results) > 0 && password_verify($_POST['password'], $results['password']))
+			{
             $_SESSION['user_id'] = $results['id_usuario'];
-            header('Location: http://localhost/SW/home/index.php');    
-        } else {
-            $message = 'Sorry, invalid username or password';
-        }
-    }
-
+            header('Location: http://localhost/swappweb/home/index.php');    
+			} 
+		else
+			{
+            $message = 'Parece que tu correo y/o contraseña no son correctos';
+        	}
+    	}
+	
 ?>
 
 
@@ -65,10 +69,10 @@
 						<form method="post" action="login.php">
 							<div class="fields">
 								<div class="field">
-									<input type="text" name="email" id="name" placeholder="Correo" />
+									<input type="text" name="email" id="email" placeholder="Correo" required/>
 								</div>
 								<div class="field">
-									<input type="password" name="password" id="email" placeholder="Contraseña" />
+									<input type="password" name="password" id="password" placeholder="Contraseña" required/>
 								</div>
 							<!--
 								<div class="field">

@@ -23,12 +23,12 @@
     <div id="wrapper">
 
         <ul id="button" class="superior y:hover activey uly liy liay ">
-            <li><a href="/SW/index.php">Swapp</a></li>
+            <li><a href="/swappweb/index.php">Swapp</a></li>
             <li><a href=”#”>Inicio</a></li>
             <li><a href="ingresos_extra.html">Ingresos</a></li>
             <li><a href=”#”>Gastos</a></li>
             <li><a href=”#”>Estadisticas</a></li>
-            <li><a href="/SW/Logout.php" class="button">Logout</a></li>
+            <li><a href="/swappweb/Logout.php" class="button">Logout</a></li>
         </ul>
 
         <!-- Main -->
