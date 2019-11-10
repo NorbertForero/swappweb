@@ -15,7 +15,8 @@
         $stmt-> bindParam (':password', $password);
 
         if ($stmt->execute()){
-            $message = 'Successfully created new user!!';
+			$message = 'Successfully created new user!!';
+			header('Location: /swappweb/index.php');
         } else {
             $message = 'Sorry, an error has ocurred!!';
         }
@@ -50,18 +51,18 @@
 									<input type="text" name="nombres" id="name" placeholder="Nombres" />
 								</div>
 								<div class="field">
-									<input type="text" name="apellidos" id="name" placeholder="Apellidos" />
+									<input type="text" name="apellidos" id="last_name" placeholder="Apellidos" />
 								</div>
 								<div class="field">
-									<input type="text" name="email" id="name" placeholder="Correo" />
+									<input type="text" name="email" id="email" placeholder="Correo" />
 								</div>
 								<div class="field">
-									<input type="password" name="password" id="email" placeholder="Contraseña" />
+									<input type="password" name="password" id="password" placeholder="Contraseña" />
 								</div>
 							</div>
 							<div>
 								<ul class="actions special">
-									<li><input href="/SW/login.php" type="submit"  value="Siguiente"><a href="login.php" class="button">Siguiente</a></li>	
+									<li><input  type="submit"  value="Siguiente" href="/SW/login.php"></li>	
 									<li><a href="login.php" class="button">Atras</a></li>
 								</ul>
 							</div>
