@@ -6,28 +6,6 @@
 		header('Location: http://localhost/swappweb/home/index.php');
     }
 	
-	require 'DB.php';
-
-	if (!empty($_POST['email']) && !empty($_POST['password']))
-	{
-        $records = $conn->prepare('SELECT id_usuario, email, password FROM users WHERE email=:email');
-        $records->bindParam(':email', $_POST['email']);
-        $records->execute();
-        $results=$records->fetch(PDO::FETCH_ASSOC);
-
-        $message = '';
-
-		if (count($results) > 0 && password_verify($_POST['password'], $results['password']))
-			{
-            $_SESSION['user_id'] = $results['id_usuario'];
-            header('Location: http://localhost/swappweb/home/index.php');    
-			} 
-		else
-			{
-            $message = 'Parece que tu correo y/o contraseña no son correctos';
-        	}
-    	}
-	
 ?>
 
 
@@ -66,7 +44,7 @@
     					<p><?= $message ?></p>
     					<?php endif; ?>
 
-						<form method="post" action="login.php">
+						<form method="post" action="check-login.php">
 							<div class="fields">
 								<div class="field">
 									<input type="text" name="email" id="email" placeholder="Correo" required/>
@@ -97,9 +75,7 @@
 							-->
 							</div>
 							<ul class="actions special">
-								<li><input type="submit" href="Ingresos y Gastos/Ingresos/index.php" value="Login">
-								
-								
+								<li><input type="submit" value="Login">								
 								</li>
 								<a></a>
 								<a href="../index.php" class="button">Atras</a>
