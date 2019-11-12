@@ -5,7 +5,6 @@
     <title>ingresos</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/menu.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -17,27 +16,34 @@
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
-<body class="is-preload">
+    <!-- Wrapper -->  
+    <div id="main-menu">
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-        <ul id="button" class="superior y:hover activey uly liy liay ">
-            <li><a href="/swappweb/index.php">Swapp</a></li>
-            <li><a href=”#”>Inicio</a></li>
-            <li><a href="ingresos_extra.html">Ingresos</a></li>
-            <li><a href=”#”>Gastos</a></li>
-            <li><a href=”#”>Estadisticas</a></li>
-            <li><a href="/swappweb/Logout.php" class="button">Logout</a></li>
-        </ul>
-
+            <div class="container main-menu" id="main-menu">
+                    <div class="row align-items-center justify-content-between">
+                        <nav id="nav-menu-container">
+                            <ul class="nav-menu">
+                                <li class="menu-active"><a href="../index.php">Swapp</a></li>
+                                <li><a href="../home/index.html">Home</a></li>
+                                <li><a href="../home/Ingresos/ingresos_extra.html">Ingresos</a></li>
+                                <li><a href="category.html">Gastos</a></li>
+                                <li><a href="about.html">Estadisticas</a></li>
+                        </ul>
+                        <div >
+                            <h3 class="titulo-menu"> Bienvenido:</h3>
+                            <a title="Cerrar sesión" href="../index.php"><img class="img-menu" src="../home/Ingresos/images/logout.png" width="80px" alt=""></a>
+                        </div>
+                        </nav>
+                    </div>
+            </div>
+<div id="wrapper">            
         <!-- Main -->
         <section id="main">
             <header>
                 <div>
-                    <span class="flecha"> <h1 class="titulohome"> Swapp</h1>
+                    <span class="texthome"> <h1 class="texthome"> Swapp</h1>
                         <br> 
-                     <p>
+                     <p class="p">
                          Ingresa a cualquiera de las opciones y empieza a gestionar tus finanzas con seguridad y eficiencia de una forma facil y rapida.
                      </p>      
                         <div class="hero-nav-area">
@@ -90,7 +96,7 @@
             </form>
 
     </div>
-
+</div>
 
     <!-- Scripts -->
     <script>
