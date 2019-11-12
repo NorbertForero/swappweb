@@ -45,7 +45,7 @@
 						
 						<h3>Bienvenido, por favor ingresa tus </h3>
 						<h3>datos para registrar tu cuenta</h3>
-						<form method="post" action="Register.php">
+						<form method="post" action="crearUsuario.php">
 							<div class="fields">
 								<div class="field">
 									<input type="text" name="nombres" id="name" placeholder="Nombres" required />
