@@ -24,7 +24,7 @@
                         <nav id="nav-menu-container">
                             <ul class="nav-menu">
                                 <li class="menu-active"><a href="../index.php">Swapp</a></li>
-                                <li><a href="../home/index.html">Home</a></li>
+                                <li><a href="../home/index.php">Home</a></li>
                                 <li><a href="../home/Ingresos/ingresos_extra.html">Ingresos</a></li>
                                 <li><a href="category.html">Gastos</a></li>
                                 <li><a href="about.html">Estadisticas</a></li>
