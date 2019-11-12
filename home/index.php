@@ -31,7 +31,7 @@
                         </ul>
                         <div >
                             <h3 class="titulo-menu"> Bienvenido:</h3>
-                            <a title="Cerrar sesión" href="../index.php"><img class="img-menu" src="../home/Ingresos/images/logout.png" width="80px" alt=""></a>
+                            <a title="Cerrar sesión" href="../Logout.php"><img class="img-menu" src="../home/Ingresos/images/logout.png" width="80px" alt=""></a>
                         </div>
                         </nav>
                     </div>
