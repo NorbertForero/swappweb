@@ -36,15 +36,13 @@
             <header>
                 <div>
                     <span class="flecha"> <h1 class="titulohome"> Swapp</h1>
-                        <p>
-                              Somos la voz de la conciencia cuando quieras darte un gustico de más 
-                            <br>
-                            <br> 
-                           <h5> Swapp es tu solución. </h5> 
-                        </p>
-                        <p>
-                            Ingresa a cualquiera de las opciones y empieza a gestionar tus finanzas con seguridad y eficiencia de una forma facil y rapida.
-                        </p>
+                        <br> 
+                     <p>
+                         Ingresa a cualquiera de las opciones y empieza a gestionar tus finanzas con seguridad y eficiencia de una forma facil y rapida.
+                     </p>      
+                        <div class="hero-nav-area">
+                                    <p class="text-white link-nav"><img class="img-fluid" src="images/swapp.png" width="600px"></p>
+                                </div>
 							</span>
                 </div>
             </header>
@@ -52,13 +50,13 @@
             <form method="post" action="#">
                                     <div class="single-testimonial item d-flex flex-row">
                                             <div class="thumb">
-                                                <img class="img-fluid" src="images/ingresos.png" alt="">
+                                                <img class="img-fluid" src="images/ahorro.png"  width="90px" alt="">
                                             </div>
                                             <div>
                                                 <p>
                                                      Por medio de un formulario por categorías, podras registrar todos tus ingresos mensuales.
                                                 </p>
-                                                <h4 mt-30 ><a href="ingresos_extra.html"> Registrar Ingresos > </a></h4>
+                                                <h4 mt-30 ><a href="../home/Ingresos/ingresos_extra.html"> Registrar Ingresos > </a></h4>
                                             </div>  
                                     </div>                                           
             </form>
@@ -66,13 +64,13 @@
             <form method="post" action="#">
                     <div class="single-testimonial item d-flex flex-row">
                             <div class="thumb">
-                                <img class="img-fluid" src="images/ingresos.png" alt="">
+                                <img class="img-fluid" src="images/gastos.png" width="90px"  alt="">
                             </div>
                             <div>
                                 <p>
-                                     Por medio de un formulario por categorías, podras registrar todos tus ingresos mensuales.
+                                     Por medio de un formulario por categorías, podras registrar todos tus Gastos mensuales.
                                 </p>
-                                <h4 mt-30 ><a href="ingresos_extra.html"> Registrar Deudas > </a></h4>
+                                <h4 mt-30 ><a href="ingresos_extra.html"> Registrar Gastos > </a></h4>
                             </div>  
                     </div>                                           
             </form>
@@ -80,11 +78,11 @@
             <form method="post" action="#">
                     <div class="single-testimonial item d-flex flex-row">
                             <div class="thumb">
-                                <img class="img-fluid" src="images/ingresos.png" alt="">
+                                <img class="img-fluid" src="images/estadistica.png" width="90px" alt="">
                             </div>
                             <div>
                                 <p>
-                                     Por medio de un formulario por categorías, podras registrar todos tus ingresos mensuales.
+                                     Por medio de graficas podras ver todos tus movimientos y estadisticas financieras.
                                 </p>
                                 <h4 mt-30 ><a href="ingresos_extra.html"> Estadisticas > </a></h4>
                             </div>  

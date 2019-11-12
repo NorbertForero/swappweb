@@ -163,7 +163,11 @@ textarea {
     appearance: none;
     font: arial !important;
 }
-
+.hero-nav-area {
+    text-align: center;
+    background-color: #33B4E4;
+    color: #fff;
+  }
 
 /* Basic */
 
@@ -185,7 +189,6 @@ html {
 }
 
 .img-fluid{
-    max-width: 350% !important;
     height: 90% !important;
     padding: 5px;
     margin-right: 50px;
@@ -341,7 +344,7 @@ h6 a {
 h1 {
     font-size: 1.85em;
     margin: 0 0 0.525em 0;
-    background: #EBBF63;
+    
 }
 
 h2 {
