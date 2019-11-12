@@ -35,17 +35,23 @@
 
 	// If count == 1 that means the email is already on the database
 	if ($count == 1) {
-		echo'<script type="text/javascript">
-		alert("El usuario ya se encuentra registrado");
-		window.location.href="login.php";
-		</script>';     
+				/*echo "<div class='alert alert-warning mt-4' role='alert'>
+						<p>El usuario ya existe</p>
+						<p><a href='Register.php'>Please login here</a></p>
+					</div>";*/
+
+				echo'<script type="text/javascript">
+				alert("El usuario ya existe");
+				window.location.href="Register.php";
+				</script>'; 		
 	} else {	
 	
 	/*
 	If the email don't exist, the data from the form is sended to the
 	database and the account is created
 	*/
-	$nonmbres = $_POST['nombres'];
+	
+	$nombres = $_POST['nombres'];
 	$apellidos = $_POST['apellidos'];
 	$email = $_POST['email'];
 	$pass = $_POST['password'];
@@ -54,12 +60,19 @@
 	$passHash = password_hash($pass, PASSWORD_DEFAULT);
 	
 	// Query to send Name, Email and Password hash to the database
-	$query = "INSERT INTO users (nombres, apellidos, email, password) VALUES ('$nonmbres','$apellidos' '$email', '$passHash')";
+	$query = "INSERT INTO users (nombres, apellidos, email, password) VALUES ('$nombres','$apellidos','$email', '$passHash')";
 
 	if (mysqli_query($conn, $query)) {
-		echo "<div class='alert alert-success mt-4' role='alert'><h3>Your account has been created.</h3>
-		<a class='btn btn-outline-primary' href='login.html' role='button'>Login</a></div>";		
-		} else {
+			/*echo "<div class='alert alert-warning mt-4' role='alert'>
+				<p>Usuario registrado exitosamente</p>
+				<p><a href='login.php'>Please login here</a></p>
+			 </div>";*/
+			echo'<script type="text/javascript">
+			 alert("Usuario registrado exitosamente");
+			 window.location.href="login.php";
+			 </script>'; 		 	
+	
+	} else {
 			echo "Error: " . $query . "<br>" . mysqli_error($conn);
 		}	
 	}	
