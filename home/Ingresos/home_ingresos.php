@@ -5,8 +5,8 @@
     <title>ingresos</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="../Ingresos/assets/css/main.css" />
+    <link rel="stylesheet" href="../Ingresos/assets/css/bootstrap.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -25,7 +25,7 @@
                             <ul class="nav-menu">
                                 <li class="menu-active"><a href="../index.php">Swapp</a></li>
                                 <li><a href="../home/index.php">Home</a></li>
-                                <li><a href="../home/Ingresos/ingresos_extra.html">Ingresos</a></li>
+                                <li><a href="#">Ingresos</a></li>
                                 <li><a href="category.html">Gastos</a></li>
                                 <li><a href="about.html">Estadisticas</a></li>
                         </ul>
@@ -41,10 +41,10 @@
         <section id="main">
             <header>
                 <div>
-                    <span class="texthome"> <h1 class="texthome"> Swapp</h1>
+                    <span class="texthome"> <h1 class="texthome"> Ingresos</h1>
                         <br> 
                      <p class="p">
-                         Ingresa a cualquiera de las opciones y empieza a gestionar tus finanzas con seguridad y eficiencia de una forma facil y rapida.
+                         Escoge la categoria en la cual vas a registrar tu nuevo Ingreso:
                      </p>      
                         <div class="hero-nav-area">
                                     <p class="text-white link-nav"><img class="img-fluid" src="images/swapp.png" width="600px"></p>
@@ -53,16 +53,18 @@
                 </div>
             </header>
             <br>
+            <span class="texthome"> <h4 class="texthome"> Total Ingresos:</h4><p> $280.000</p></span>
             <form method="post" action="#">
                                     <div class="single-testimonial item d-flex flex-row">
                                             <div class="thumb">
-                                                <img class="img-fluid" src="images/ahorro.png"  width="90px" alt="">
+                                                <img class="img-fluid" src="../images/salario.png"  width="90px" alt="">
                                             </div>
                                             <div>
+                                                <h4 mt-30 ><a class="text-home-ingresos" href="../Ingresos/ingresos_extra.html"> SALARIO > </a></h4>
+                                                <br>
                                                 <p>
-                                                     Por medio de un formulario por categorías, podras registrar todos tus ingresos mensuales.
-                                                </p>
-                                                <h4 mt-30 ><a href="../home/Ingresos/home_ingresos.html"> Registrar Ingresos > </a></h4>
+                                                    Tu salario es: $200.000
+                                               </p>
                                             </div>  
                                     </div>                                           
             </form>
@@ -70,13 +72,14 @@
             <form method="post" action="#">
                     <div class="single-testimonial item d-flex flex-row">
                             <div class="thumb">
-                                <img class="img-fluid" src="images/gastos.png" width="90px"  alt="">
+                                <img class="img-fluid" src="../images/prestamo.png" width="90px"  alt="">
                             </div>
                             <div>
+                                <h4 mt-30 ><a href="../Ingresos/ingresos_extra.html"> PRESTAMO > </a></h4>
+                                <br>
                                 <p>
-                                     Por medio de un formulario por categorías, podras registrar todos tus Gastos mensuales.
-                                </p>
-                                <h4 mt-30 ><a href="ingresos_extra.html"> Registrar Gastos > </a></h4>
+                                    Tus prestamos son: $50.000
+                               </p>
                             </div>  
                     </div>                                           
             </form>
@@ -84,13 +87,14 @@
             <form method="post" action="#">
                     <div class="single-testimonial item d-flex flex-row">
                             <div class="thumb">
-                                <img class="img-fluid" src="images/estadistica.png" width="90px" alt="">
+                                <img class="img-fluid" src="../images/extra.png" width="90px" alt="">
                             </div>
                             <div>
+                                <h4 mt-30 ><a href="../Ingresos/ingresos_extra.html"> INGRESOS EXTRA > </a></h4>
+                                <br>
                                 <p>
-                                     Por medio de graficas podras ver todos tus movimientos y estadisticas financieras.
-                                </p>
-                                <h4 mt-30 ><a href="ingresos_extra.html"> Estadisticas > </a></h4>
+                                    Tus ingresos extra son: $30.000
+                               </p>
                             </div>  
                     </div>                                           
             </form>
