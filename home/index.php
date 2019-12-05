@@ -90,7 +90,7 @@
                                 <p>
                                      Por medio de graficas podras ver todos tus movimientos y estadisticas financieras.
                                 </p>
-                                <h4 mt-30 ><a href="ingresos_extra.html"> Estadisticas > </a></h4>
+                                <h4 mt-30 ><a href="graficas\grafica.php"> Estadisticas > </a></h4>
                             </div>  
                     </div>                                           
             </form>
