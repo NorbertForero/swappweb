@@ -76,7 +76,7 @@
                                 <p>
                                      Por medio de un formulario por categorías, podras registrar todos tus Gastos mensuales.
                                 </p>
-                                <h4 mt-30 ><a href="../home/Ingresos/home_ingresos.php"> Registrar Gastos > </a></h4>
+                                <h4 mt-30 ><a href="../home/Gastos/home_gastos.php"> Registrar Gastos > </a></h4>
                             </div>  
                     </div>                                           
             </form>
