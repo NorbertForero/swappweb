@@ -23,15 +23,15 @@
                     <div class="row align-items-center justify-content-between">
                         <nav id="nav-menu-container">
                             <ul class="nav-menu">
-                                <li class="menu-active"><a href="../index.php">Swapp</a></li>
-                                <li><a href="../home/index.php">Home</a></li>
+                                <li class="menu-active"><a href="../../index.php">Swapp</a></li>
+                                <li><a href="../../home/index.php">Home</a></li>
                                 <li><a href="#">Ingresos</a></li>
-                                <li><a href="category.html">Gastos</a></li>
+                                <li><a href="../Gastos/home_gastos.php">Gastos</a></li>
                                 <li><a href="about.html">Estadisticas</a></li>
                         </ul>
                         <div >
                             <h3 class="titulo-menu"> Bienvenido:</h3>
-                            <a title="Cerrar sesión" href="../Logout.php"><img class="img-menu" src="../home/Ingresos/images/logout.png" width="80px" alt=""></a>
+                            <a title="Cerrar sesión" href="../../Logout.php"><img class="img-menu" src="../images/logout.png" width="80px" alt=""></a>
                         </div>
                         </nav>
                     </div>
@@ -46,8 +46,8 @@
                      <p class="p">
                          Escoge la categoria en la cual vas a registrar tu nuevo Ingreso:
                      </p>      
-                        <div class="hero-nav-area">
-                                    <p class="text-white link-nav"><img class="img-fluid" src="images/swapp.png" width="600px"></p>
+                        <div class="hero-nav-area-ingresos">
+                                    <p class="text-white link-nav"><img class="img-fluid" src="../images/home_ingresos.png" width="600px"></p>
                                 </div>
 							</span>
                 </div>

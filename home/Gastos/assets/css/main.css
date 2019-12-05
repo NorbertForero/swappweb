@@ -168,6 +168,16 @@ textarea {
     color: #fff;
   }
 
+  .hero-nav-area-ingresos {
+    text-align: center;
+    background-color: #EE7972;
+    color: #fff;
+  }
+  .hero-nav-area-gastos {
+    text-align: center;
+    background-color: #ffbd59;
+    color: #fff;
+  }
 /* Basic */
 
 @media screen and (max-width: 480px) {
@@ -1351,8 +1361,7 @@ body.is-ie #wrapper {
      position: absolute;
      line-height: 15px;
      padding: 1px 10px;
-     margin-left: 1000px;
-
+     margin-left: 1150px;
     }
 .titulo-menu{
     color:#49F5AB ;
@@ -1361,4 +1370,5 @@ body.is-ie #wrapper {
     padding: 15px 10px;
     margin-left: 800px;
 }
+
 

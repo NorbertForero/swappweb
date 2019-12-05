@@ -5,8 +5,8 @@
     <title>ingresos</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="../Ingresos/assets/css/main.css" />
-    <link rel="stylesheet" href="../Ingresos/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="../Gastos/assets/css/main.css" />
+    <link rel="stylesheet" href="../Gastos/assets/css/bootstrap.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -23,15 +23,15 @@
                     <div class="row align-items-center justify-content-between">
                         <nav id="nav-menu-container">
                             <ul class="nav-menu">
-                                <li class="menu-active"><a href="../index.php">Swapp</a></li>
-                                <li><a href="../home/index.php">Home</a></li>
-                                <li><a href="../home/Ingresos/home_ingresos.php">Ingresos</a></li>
+                                <li class="menu-active"><a href="../../index.php">Swapp</a></li>
+                                <li><a href="../index.php">Home</a></li>
+                                <li><a href="../../home/Ingresos/home_ingresos.php">Ingresos</a></li>
                                 <li><a href="#">Gastos</a></li>
-                                <li><a href="about.html">Estadisticas</a></li>
+                                <li><a href="../graphics">Estadisticas</a></li>
                         </ul>
                         <div >
                             <h3 class="titulo-menu"> Bienvenido:</h3>
-                            <a title="Cerrar sesión" href="../Logout.php"><img class="img-menu" src="../home/Ingresos/images/logout.png" width="80px" alt=""></a>
+                            <a title="Cerrar sesión" href="../../Logout.php"><img class="img-menu" src="../images/logout.png" width="80px" alt=""></a>
                         </div>
                         </nav>
                     </div>
@@ -46,8 +46,8 @@
                      <p class="p">
                          Escoge la categoria en la cual vas a registrar tu nuevo gasto:
                      </p>      
-                        <div class="hero-nav-area">
-                                    <p class="text-white link-nav"><img class="img-fluid" src="images/swapp.png" width="600px"></p>
+                        <div class="hero-nav-area-gastos">
+                                    <p class="text-white link-nav"><img class="img-fluid" src="../images/home_gastos.png" width="600px"></p>
                                 </div>
 							</span>
                 </div>

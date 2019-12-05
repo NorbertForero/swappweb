@@ -167,7 +167,16 @@ textarea {
     background-color: #33B4E4;
     color: #fff;
   }
-
+.hero-nav-area-gastos {
+    text-align: center;
+    background-color: #ffdb59;
+    color: #fff;
+  }
+.hero-nav-area-ingresos {
+    text-align: center;
+    background-color: #EE7972;
+    color: #fff;
+  }
 /* Basic */
 
 @media screen and (max-width: 480px) {
@@ -1351,7 +1360,7 @@ body.is-ie #wrapper {
      position: absolute;
      line-height: 15px;
      padding: 1px 10px;
-     margin-left: 1000px;
+     margin-left: 1150px;
 
     }
 .titulo-menu{
