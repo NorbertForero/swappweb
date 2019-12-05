@@ -58,3 +58,15 @@
     color: #33B4E4;
     background: #ffffff;
 }
+.buttonFormulario{
+    display: inline-block;
+    line-height: 2.75em;
+    background-color: #33B4E4;
+    border-radius: 100px;
+    border: solid 1px #000000;
+    color: #000000 !important;
+    text-align: center;
+    width: 40em;
+    margin-top: 50px;
+    margin-left: 50px;
+}

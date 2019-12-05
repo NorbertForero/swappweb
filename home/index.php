@@ -25,8 +25,8 @@
                             <ul class="nav-menu">
                                 <li class="menu-active"><a href="../index.php">Swapp</a></li>
                                 <li><a href="../home/index.php">Home</a></li>
-                                <li><a href="../home/Ingresos/ingresos_extra.html">Ingresos</a></li>
-                                <li><a href="category.html">Gastos</a></li>
+                                <li><a href="../home/Ingresos/home_ingresos.php">Ingresos</a></li>
+                                <li><a href="../home/Gastos/home_gastos.php">Gastos</a></li>
                                 <li><a href="about.html">Estadisticas</a></li>
                         </ul>
                         <div >
@@ -62,7 +62,7 @@
                                                 <p>
                                                      Por medio de un formulario por categorías, podras registrar todos tus ingresos mensuales.
                                                 </p>
-                                                <h4 mt-30 ><a href="../home/Ingresos/home_ingresos.html"> Registrar Ingresos > </a></h4>
+                                                <h4 mt-30 ><a href="../home/Ingresos/home_ingresos.php"> Registrar Ingresos > </a></h4>
                                             </div>  
                                     </div>                                           
             </form>
@@ -76,7 +76,7 @@
                                 <p>
                                      Por medio de un formulario por categorías, podras registrar todos tus Gastos mensuales.
                                 </p>
-                                <h4 mt-30 ><a href="ingresos_extra.html"> Registrar Gastos > </a></h4>
+                                <h4 mt-30 ><a href="../home/Ingresos/home_ingresos.php"> Registrar Gastos > </a></h4>
                             </div>  
                     </div>                                           
             </form>
@@ -90,7 +90,7 @@
                                 <p>
                                      Por medio de graficas podras ver todos tus movimientos y estadisticas financieras.
                                 </p>
-                                <h4 mt-30 ><a href="graficas\grafica.php"> Estadisticas > </a></h4>
+                                <h4 mt-30 ><a href="../home/graficas/grafica.php"> Estadisticas > </a></h4>
                             </div>  
                     </div>                                           
             </form>

@@ -60,7 +60,7 @@
                                                 <img class="img-fluid" src="../images/salario.png"  width="90px" alt="">
                                             </div>
                                             <div>
-                                                <h4 mt-30 ><a class="text-home-ingresos" href="../Ingresos/ingresos_extra.html"> SALARIO > </a></h4>
+                                                <h4 mt-30 ><a class="text-home-ingresos" href="../Ingresos/salario.php"> SALARIO > </a></h4>
                                                 <br>
                                                 <p>
                                                     Tu salario es: $200.000
@@ -75,7 +75,7 @@
                                 <img class="img-fluid" src="../images/prestamo.png" width="90px"  alt="">
                             </div>
                             <div>
-                                <h4 mt-30 ><a href="../Ingresos/ingresos_extra.html"> PRESTAMO > </a></h4>
+                                <h4 mt-30 ><a href="../Ingresos/prestamo.php"> PRESTAMO > </a></h4>
                                 <br>
                                 <p>
                                     Tus prestamos son: $50.000
@@ -90,7 +90,7 @@
                                 <img class="img-fluid" src="../images/extra.png" width="90px" alt="">
                             </div>
                             <div>
-                                <h4 mt-30 ><a href="../Ingresos/ingresos_extra.html"> INGRESOS EXTRA > </a></h4>
+                                <h4 mt-30 ><a href="../Ingresos/ingresos_extra.php"> INGRESOS EXTRA > </a></h4>
                                 <br>
                                 <p>
                                     Tus ingresos extra son: $30.000

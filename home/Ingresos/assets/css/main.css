@@ -875,7 +875,7 @@ ul.actions.fit.stacked {
     ul.actions:not(.fixed) li input[type="button"].icon:before,
     ul.actions:not(.fixed) li button.icon:before,
     ul.actions:not(.fixed) li .button.icon:before {
-        margin-left: -0.5rem;
+        margin-left: 0.5rem;
     }
 }
 
@@ -972,8 +972,7 @@ button,
     display: inline-block;
     height: 3em;
     line-height: 2.75em;
-    padding: 0 1.5em;
-    background-color: #EBBF63;
+    background-color: #33B4E4;
     border-radius: 100px;
     border: solid 1px #000000;
     color: #000000 !important;
@@ -982,6 +981,7 @@ button,
     text-decoration: none;
     white-space: nowrap;
     width: 40em;
+    margin-top: 50px;
 }
 
 input[type="submit"]:hover,

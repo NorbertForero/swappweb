@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>ingresos</title>
+		<title>gastos</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap.css" />
-		<link rel="stylesheet" href="assets/css/menu.css" />
+		<link rel="stylesheet" href="assets/css/menu.css"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@
 					<section id="main">
 						<header>
 							<div>
-							<span class="flecha"> <h1> <img src="images/flecha.png" alt="" width="30px" height="30px" /> Ingresos Extra</h1>
+							<span class="flecha"> <h1> <img src="images/flecha.png" alt="" width="30px" height="30px" /> Facturas</h1>
 							</span>
 						</div>
 						</header>
@@ -31,9 +31,9 @@
 
 						  <form>
 							<div class="form-group">
-							  <label for="banco">Banco o entidad</label>
+							  <label for="banco">Número de Factura</label>
 							  <input type="texto" class="form-control" id="banco" 
-									 aria-describedby="Ingresa tu banco" placeholder="Ingresa tu banco">
+									 aria-describedby="Ingresa tu Factura" placeholder="Ingresa tu Factura">
 							</div>
 	
 							  <div class="form-group">
@@ -47,13 +47,13 @@
 									   aria-describedby="Ingresa la Descripción" placeholder="Ingresa la Descripción">
 							  </div>
 							  <div class="form-group">
-								<label for="fecha">Fecha de consignación</label>
+								<label for="fecha">Fecha de pago de factura</label>
 								<input type="date" class="form-control" id="fecha" 
 									   aria-describedby="dd/mm/aaaa" placeholder="dd/mm/aaaa">
 							  </div>
 
 							  <div class="form-group row">
-								<div class="col-sm-2">Tipo de consignación</div>
+								<div class="col-sm-2">Tipo de gasto</div>
 								<div class="col-sm-10">
 								  <div class="form-check">
 								<label class="form-check-label">
@@ -65,7 +65,7 @@
 							</div>
 					 
 						<div>
-						 	 <a class="buttonFormulario" href="../Ingresos/home_ingresos.php"> Guardar</a>
+						 	 <a class="buttonFormulario" href="../Gastos/home_gastos.php"> Guardar</a>
 						</div>
 
 		<!-- Scripts -->

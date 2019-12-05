@@ -23,7 +23,7 @@
 					<section id="main">
 						<header>
 							<div>
-							<span class="flecha"> <h1> <img src="images/flecha.png" alt="" width="30px" height="30px" /> Ingresos Extra</h1>
+							<span class="flecha"> <h1> <img src="images/flecha.png" alt="" width="30px" height="30px" /> Salario</h1>
 							</span>
 						</div>
 						</header>
