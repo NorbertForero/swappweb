@@ -27,7 +27,7 @@
                                 <li><a href="../../home/index.php">Home</a></li>
                                 <li><a href="#">Ingresos</a></li>
                                 <li><a href="../Gastos/home_gastos.php">Gastos</a></li>
-                                <li><a href="about.html">Estadisticas</a></li>
+                                <li><a href="../../home/graficas/grafica.php">Estadisticas</a></li>
                         </ul>
                         <div >
                             <h3 class="titulo-menu"> Bienvenido:</h3>
