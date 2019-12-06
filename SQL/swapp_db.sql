@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 06, 2019 at 05:46 PM
+-- Generation Time: Dec 06, 2019 at 10:53 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.10
 
@@ -49,15 +49,41 @@ CREATE TABLE `categoria_ingreso` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `estadistica`
+--
+
+CREATE TABLE `estadistica` (
+  `id_estadistica` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
+  `id_ingreso` int(11) NOT NULL,
+  `id_gasto` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `gastos`
 --
 
 CREATE TABLE `gastos` (
   `id_gasto` int(11) NOT NULL,
+  `categoria_gasto` varchar(200) NOT NULL,
   `valor_gasto` double NOT NULL,
-  `fecha_gasto` date NOT NULL,
   `id_usuario` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `gastos`
+--
+
+INSERT INTO `gastos` (`id_gasto`, `categoria_gasto`, `valor_gasto`, `id_usuario`) VALUES
+(13, 'Banco', 274383, 37),
+(14, 'Mercado', 294724, 37),
+(15, 'Plan Celular', 2729527, 38),
+(16, 'Tarjeta Credito', 4825295, 38),
+(17, 'Medico', 287242, 38),
+(18, 'Factura ETB', 50000, 37),
+(19, 'Factura Agua', 75000, 37);
 
 -- --------------------------------------------------------
 
@@ -77,7 +103,8 @@ CREATE TABLE `ingresos` (
 --
 
 INSERT INTO `ingresos` (`id_ingreso`, `valor_ingreso`, `fecha_ingreso`, `id_usuario`) VALUES
-(1, 10, '0000-00-00', 25);
+(1, 10, '0000-00-00', 25),
+(3, 30000, '2019-11-16', 25);
 
 -- --------------------------------------------------------
 
@@ -98,7 +125,20 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_usuario`, `nombres`, `apellidos`, `email`, `password`) VALUES
-(25, 'DIEGO', 'FABIAN', 'diego@gmail.com', '$2y$10$QnjC4iS5LbghIP3ygSxfee0OFfyFZoPiQtp8Z6WIhNwebAis/BKtu');
+(25, 'DIEGO', 'FABIAN', 'diego@gmail.com', '$2y$10$QnjC4iS5LbghIP3ygSxfee0OFfyFZoPiQtp8Z6WIhNwebAis/BKtu'),
+(27, 'ANDRES', 'PEREZ', 'andres', '$2y$10$79/5MaRzA7vDM16TbVXOeuPBsKVPFg9agI96oUn3liz5DPBLBSt2G'),
+(28, 'FELIPE', 'PEREZ', 'felipe@mail.com', '$2y$10$xRbgMAPDa0mGqX.fuK0vROKn9IDAgj6FEz8qNYtz7v8TTmmKe3JUy'),
+(29, 'Andres', 'Perez', 'andresfirigua@gmail.com', '$2y$10$jpKkZUbyRxvleWCcLG71ceTT3RuL7dSjM4hWQemyTA4F8gD5RnWKW'),
+(30, 'Felipe', 'Firigua', 'felipefirigua@gmail.com', '$2y$10$c88bRRx8eL8W9q9Lqk.qleAGFMTXMOY.YxcNKXyUudAmn/mE1Lyh.'),
+(31, 'norbert', 'forero', 'nsforero@sanmateo.edu.co', '$2y$10$uJJdawaXLqw3zyVBMESyTOBjAMef2pNFEDGGGI/qk7nOsdt.GEgQS'),
+(32, 'norbert', 'forero', '@', '$2y$10$LPdHHPEUPQMPnl7WDwyPcukxIkvOpD55JunCRxp7r7lunKmCpbaM6'),
+(33, 'h', 's', 'h@s', '$2y$10$/fWODbRq4iZju2ViVahyZOPSqQ1v1hn7by58Cz1MF0VPL6sLBbHrq'),
+(34, 'Andrés Felipe ', 'Perez Firigua', 'andres.perez@gmail.com', '$2y$10$MyIJjugyVZE2dDzW5tVJaeVU4Amlw6L1flP/Cbbpze196SyoqnbWe'),
+(35, 'Diego', 'Rayo', 'diego.rayo@gmail.com', '$2y$10$lfTiJvnh/d2HKUN6sRW7PuZcGtdHPyHlEFi/BrJYU0xOD0VOHIunW'),
+(36, 'Andres', 'Perez', 'prueba1@gmail.com', '$2y$10$.mp78YvTfzdJC5wsFLRG.erzNxXqGBk8fqPaq6hLaaZbsTcc9XXu6'),
+(37, 'Jose ', 'Rodriguez', 'jose@gmail.com', '$2y$10$0Yo7pwbYaInvj/.YkZysVOn2yYnViDakQMQxTkhtVl9pdj6.k0uqC'),
+(38, 'Andres', 'Felipe', 'andres.firigua@gmail.com', '$2y$10$fUFlmOE0dwQVmW8PJYA2EuECL0yOj2QCSCIgJl2dF3/k.DFfbMnZy'),
+(39, '', '', '', '$2y$10$5WSWD3WvkPCrMUJN2GBVUezQbJkE.UFUB1hq/VP9CN5LAvrgkO4Dm');
 
 --
 -- Indexes for dumped tables
@@ -117,6 +157,15 @@ ALTER TABLE `categoria_gastos`
 ALTER TABLE `categoria_ingreso`
   ADD PRIMARY KEY (`id_categoria_ingreso`),
   ADD KEY `id_ingreso` (`id_ingreso`);
+
+--
+-- Indexes for table `estadistica`
+--
+ALTER TABLE `estadistica`
+  ADD PRIMARY KEY (`id_estadistica`),
+  ADD KEY `id_usuario` (`id_usuario`),
+  ADD KEY `id_ingreso` (`id_ingreso`),
+  ADD KEY `id_gasto` (`id_gasto`);
 
 --
 -- Indexes for table `gastos`
@@ -155,22 +204,28 @@ ALTER TABLE `categoria_ingreso`
   MODIFY `id_categoria_ingreso` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `estadistica`
+--
+ALTER TABLE `estadistica`
+  MODIFY `id_estadistica` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `gastos`
 --
 ALTER TABLE `gastos`
-  MODIFY `id_gasto` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_gasto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `ingresos`
 --
 ALTER TABLE `ingresos`
-  MODIFY `id_ingreso` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_ingreso` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- Constraints for dumped tables
@@ -187,6 +242,14 @@ ALTER TABLE `categoria_gastos`
 --
 ALTER TABLE `categoria_ingreso`
   ADD CONSTRAINT `categoria_ingreso_ibfk_1` FOREIGN KEY (`id_ingreso`) REFERENCES `ingresos` (`id_ingreso`) ON UPDATE CASCADE;
+
+--
+-- Constraints for table `estadistica`
+--
+ALTER TABLE `estadistica`
+  ADD CONSTRAINT `estadistica_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `users` (`id_usuario`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `estadistica_ibfk_2` FOREIGN KEY (`id_ingreso`) REFERENCES `ingresos` (`id_ingreso`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `estadistica_ibfk_3` FOREIGN KEY (`id_gasto`) REFERENCES `gastos` (`id_gasto`) ON UPDATE CASCADE;
 
 --
 -- Constraints for table `gastos`
